@@ -3,8 +3,7 @@ app.listen(3000,function(){
     console.log("Server Has Started");
 })
 
-//ADDING BODY PARSER (first run "npm i body-parser --save" in terminal)
-var bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({ extended: false }))
+//Body parser is included in Express.js
+app.use(express.urlencoded({ extended: false }))
 
 
